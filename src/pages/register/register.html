@@ -1,0 +1,56 @@
+
+<ion-content padding class="no-scroll">
+    <div class="headerStrip">
+        <ion-icon ios="ios-home" md="md-home" style="float:right; font-size: 1.5em; margin-right: 2%; color: whitesmoke;"  class="homeIcon"(click)="toHomePage()"></ion-icon>
+      </div>
+            <img src="../../assets/imgs/myLoginlogo.jpg" alt="protea" class="myLoginLogoRegister" (click)="toHomePage()">
+     
+
+          <ion-card class="myCardreg">
+
+              <ion-card-header style="background-color: #4ab8b8; color: white; font-weight: bold; opacity: 0.8;">
+                Register here
+              </ion-card-header>
+              
+              <ion-card-content>
+
+                  <ion-item>
+                      <ion-input type="text" [(ngModel)]="user.fname" placeholder="Firstname"></ion-input>
+                    </ion-item>
+
+                  <ion-item no-line>
+
+                      <ion-input type="text" [(ngModel)]="user.lname" placeholder="Lastname"></ion-input>
+                    </ion-item>
+                    
+                    <ion-item no-line>
+                        <ion-input type="text" [(ngModel)]="user.emailAddress" placeholder="Email address"></ion-input>
+                      </ion-item>
+
+                  <ion-item no-line> 
+                    <ion-input type="password" [(ngModel)]="user.password" placeholder="Password"></ion-input>
+                  </ion-item>   
+
+                  <ion-item no-line>
+                      <ion-input type="text" [(ngModel)]="user.location" placeholder="Location"></ion-input>
+                    </ion-item>
+
+                  <ion-item no-line>
+                      <button ion-button full (click)="signupHere(user)" class="signInBtnReg">Sign in</button>
+                    </ion-item>
+              </ion-card-content>
+            
+            </ion-card>
+            <p class="followUsText"><b>Follow us </b></p>
+            <div class="socialMediaTag">
+                   <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-google"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+              </div>
+      
+      <div class="FooterStripReg">
+        <i class="fa fa-heart" style="font-size:106%; color: #4ab8b8; margin-left: 45%;"></i>
+      </div>
+
+</ion-content>

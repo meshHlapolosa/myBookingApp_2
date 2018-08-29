@@ -1,0 +1,96 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<ion-content padding>
+    <div class="headerStripHome">
+        <ion-icon ios="ios-lock" md="md-lock" class="logOutIcon" (click)="logOut()"></ion-icon>
+    </div>
+    <ion-slides class="slideHolderView">
+        <ion-slide style="background-color: gray;" >
+          <div class="hotelNameHolder">
+              <img src="../../assets/imgs/myLoginlogo.jpg" alt="protea"class="myLoginLogoView">
+            </div>
+            <div class="hotelImagesHolder">
+                <ion-slides pager>
+
+                    <ion-slide>
+                        <img src="../../assets/imgs/Hotel Images/Western Cape/capetown1.jpg" alt="protea">
+                    </ion-slide>
+                  
+                    <ion-slide>
+                        <img src="../../assets/imgs/Hotel Images/Western Cape/capetown2.jpg" alt="protea">
+                    </ion-slide>
+                  
+                    <ion-slide>
+                        <img src="../../assets/imgs/Hotel Images/Western Cape/capetown3.jpg" alt="protea">
+                    </ion-slide>
+
+                    <ion-slide>
+                        <img src="../../assets/imgs/Hotel Images/Western Cape/capetown4.jpg" alt="protea">
+                    </ion-slide>
+                  
+                  </ion-slides>
+              </div>
+              <div class="informationHolder">
+                <h4 class="hotelNameText">Port Elizabeth Marine </h4>
+                <div padding>
+                    <ion-segment [(ngModel)]="room" class="myRoomSegment">
+                      <ion-segment-button value="oneRoom" style="color:#1B3764; font-weight: bolder;">
+                        +1 rooms
+                      </ion-segment-button>
+                      <ion-segment-button value="twoRoom" style="color:#1B3764; font-weight: bolder;">
+                          +2 rooms
+                      </ion-segment-button>
+
+                      <ion-segment-button value="threeRoom" style="color:#1B3764; font-weight: bolder;">
+                          +3 rooms
+                        </ion-segment-button>
+                    </ion-segment>
+                  </div>
+
+                  <div [ngSwitch]="room">
+                    <ion-list *ngSwitchCase="'oneRoom'">
+                      <ion-item class="roomDetails">
+                        <ion-icon ios="ios-wifi" md="md-wifi"></ion-icon>
+                        <ion-icon ios="ios-bicycle" md="md-bicycle"></ion-icon>
+                        <ion-icon ios="ios-cafe" md="md-cafe"></ion-icon>
+                      </ion-item>
+                      <ion-icon ios="ios-wifi" md="md-wifi"></ion-icon>
+                    </ion-list>
+
+            
+                      <ion-list *ngSwitchCase="'twoRoom'">
+                        <ion-item>
+                          
+                          <h2>two room details</h2>
+                        </ion-item>
+                        ...
+                      </ion-list>
+
+                      <ion-list *ngSwitchCase="'threeRoom'">
+                        <ion-item>
+                          
+                          <h2>three room details</h2>
+                        </ion-item>
+                        ...
+                      </ion-list>
+                  
+                    
+                  </div>
+                </div>
+        </ion-slide>
+      
+        <ion-slide style="background-color: blue">
+          <h2>Slide 2</h2>
+        </ion-slide>
+      
+        <ion-slide style="background-color: red">
+          <h2>Slide 3</h2>
+        </ion-slide>
+      
+      </ion-slides>
+      <div class="headerStripHome2">
+          <ion-icon ios="ios-search" md="md-search" class="tabsIcon" (click)="findHotel()"></ion-icon>
+          <ion-icon ios="ios-apps" md="md-apps" class="tabsIcon"></ion-icon>
+          <ion-icon ios="ios-person" md="md-person" class="tabsIcon"></ion-icon>
+      </div>
+</ion-content>

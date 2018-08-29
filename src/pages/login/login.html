@@ -1,0 +1,46 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<ion-header class="stripHolder">
+
+  <ion-navbar>
+   
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="appWrapper">
+  <div class="headerStrip">
+    </div>
+    
+        <img src="../../assets/imgs/logo.jpg" alt="protea" class="myLoginLogo">
+      
+    <ion-list>
+      <ion-card class="myCard">
+          <ion-card-header style="background-color: #4ab8b8; color: white; font-weight: bold; opacity: 0.8;">
+            Login here
+          </ion-card-header>
+        
+          <ion-card-content>
+              <ion-item no-line>
+                  <ion-input type="text" [(ngModel)]="user.emailAddress" placeholder="Email"></ion-input>
+                </ion-item>
+                <ion-item no-line>
+                  <ion-input type="password" [(ngModel)]="user.password" placeholder="Password"></ion-input>
+                </ion-item>
+                <ion-item no-line>
+                    <button ion-button full (click)="signIn(user)" class="signInBtn">Sign in</button>
+                  </ion-item>
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-google"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+          </ion-card-content>
+        </ion-card>
+        <p style = "text-align: center; color: mediumaquamarine" (click)="signUp()" class="signUptext">Don't have an account yet?<b> Sign up </b></p>
+      </ion-list>
+      <div class="FooterStrip">
+          <i class="fa fa-heart" style="font-size:106%; color: #4ab8b8; margin-left: 45%;"></i>
+        </div>
+</ion-content>

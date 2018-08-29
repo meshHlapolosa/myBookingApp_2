@@ -1,14 +1,177 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+  <ion-navbar>
+   
+  </ion-navbar>
+
+<ion-content padding class="card-background-page">
+  <div class="headerStripHome">
+      <ion-icon ios="ios-lock" md="md-lock" class="logOutIcon" (click)="logOut()"></ion-icon>
+  </div>
+    <div class="imageHolder1">
+        <img src="../../assets/imgs/myLoginlogo.jpg" alt="protea"class="myLoginLogoRegister">
+      </div>
+      <p class="swipeText"> Select province here</p>
+      <div class="slideHolder">
+      <ion-slides class="slideHolder">
+          <ion-slide (click)="viewEasternCape()">
+              <ion-card>
+                
+                  <img src="../../assets/imgs/image2.jpg" style="width: 100%; "/>
+                  
+                  <ion-card-content>
+                    <ion-card-title style="background-color: #4ab8b8; color:aliceblue;font-weight: bold;">
+                      Eastern Cape
+                      </ion-card-title>
+                    <p style="color: #1B3764 ;">
+                        The Eastern Cape is a province of South Africa. 
+                        Its capital is Bhisho, but its two largest cities are Port Elizabeth and East London.
+                    </p>
+                  </ion-card-content>
+                </ion-card>
+          </ion-slide>
+        
+          <ion-slide>
+              <ion-card>
+                  
+                      <img src="../../assets/imgs/freestate.jpg" style="width: 100%; "/>
+                     
+                  <ion-card-content>
+                    <ion-card-title style="background-color: #4ab8b8; color:aliceblue;font-weight: bold;">
+                      Free State
+                      </ion-card-title>
+                    <p style="color: #1B3764">
+                        The Free State is a South African province sprawling over high plains and 
+                        stretching along the Maluti Mountains bordering Lesotho.
+                    </p>
+                  </ion-card-content>
+                </ion-card>
+          </ion-slide>
+        
+          <ion-slide>
+              <ion-card>
+                 
+                      <img src="../../assets/imgs/gauteng.jpg" style="width: 100%;"/>
+                      
+                  <ion-card-content>
+                    <ion-card-title style="background-color: #4ab8b8; color:aliceblue;font-weight: bold;">
+                      Gauteng
+                      </ion-card-title>
+                    <p style="color: #1B3764">
+                        Gauteng is a northern province of South Africa, with most of its 
+                        territory defined by 2 of the nation's largest cities.includes Destination Information.
+                    </p>
+                  </ion-card-content>
+                </ion-card>
+          </ion-slide>
+
+          <ion-slide>
+              <ion-card>
+                  
+                      <img src="../../assets/imgs/kzn.jpg" style=" width: 100%;"/>
+                   
+                  <ion-card-content>
+                    <ion-card-title style="background-color: #4ab8b8; color:aliceblue;font-weight: bold;">
+                        KwaZulu-Natal
+                      </ion-card-title>
+                    <p style="color: #1B3764">
+                        KwaZulu-Natal, a coastal South African province, is known for its beaches, 
+                        mountains and savannah populated by big game.
+                    </p>
+                  </ion-card-content>
+                </ion-card>
+          </ion-slide>
+
+          <ion-slide>
+              <ion-card>
+                 
+                      <img src="../../assets/imgs/limpopo.jpg" style="width: 100%;"/>
+                     
+                  <ion-card-content>
+                    <ion-card-title style="background-color: #4ab8b8; color:aliceblue;font-weight: bold;">
+                        Limpopo
+                      </ion-card-title>
+                    <p style="color: #1B3764">
+                        Limpopo is a South African province bordering Botswana, 
+                        Zimbabwe and Mozambique. It's known for bushveld and wildlife reserves.
+                    </p>
+                  </ion-card-content>
+                </ion-card>
+          </ion-slide>
+
+          <ion-slide>
+              <ion-card>
+                  
+                      <img src="../../assets/imgs/mpumalanga.jpg" style="width: 100%;"/>
+                      
+                  <ion-card-content>
+                    <ion-card-title style="background-color: #4ab8b8; color:aliceblue;font-weight: bold;">
+                        Mpumalanga
+                      </ion-card-title>
+                    <p style="color: #1B3764">
+                        Mpumalanga (Zulu name for "the place where the sun rises") is a 
+                        province in eastern South Africa, bordering the nations, Swaziland and Mozambique.
+                    </p>
+                  </ion-card-content>
+                </ion-card>
+          </ion-slide>
+
+          <ion-slide>
+              <ion-card>
+                  
+                      <img src="../../assets/imgs/northwest.jpg" style="width: 100%;"/>
+                      
+                  <ion-card-content>
+                    <ion-card-title style="background-color: #4ab8b8; color:aliceblue;font-weight: bold;">
+                        North West
+                      </ion-card-title>
+                    <p style="color: #1B3764">
+                        North West is an inland South African province that borders Botswana. 
+                        Its landscape is defined by mountains in the northeast and bushveld.
+                    </p>
+                  </ion-card-content>
+                </ion-card>
+          </ion-slide>
+
+          <ion-slide>
+              <ion-card>
+                  
+                      <img src="../../assets/imgs/northerncape.jpg" style="width: 100%;"/>
+                     
+                  <ion-card-content>
+                    <ion-card-title style="background-color: #4ab8b8; color:aliceblue;font-weight: bold;">
+                        Northern Cape
+                      </ion-card-title>
+                    <p style="color: #1B3764">
+                        The Northern Cape is South Africa's largest province, with desert landscapes, 
+                        wildlife and gemstones. With Botswana, it shares Kgalagadi Transfrontier Park.
+                    </p>
+                  </ion-card-content>
+                </ion-card>
+          </ion-slide>
+
+          <ion-slide>
+              <ion-card>
+                  
+                      <img src="../../assets/imgs/westerncape.jpg" style="width: 100%;"/>
+                     
+                  <ion-card-content>
+                    <ion-card-title style="background-color: #4ab8b8; color:aliceblue;font-weight: bold;">
+                        Western Cape
+                      </ion-card-title>
+                    <p style="color: #1B3764">
+                        The Western Cape is a South African province with coasts bordering the Indian and Atlantic oceans. 
+                        It's known for the port city of Cape Town.
+                    </p>
+                  </ion-card-content>
+                </ion-card>
+          </ion-slide>
+        
+        </ion-slides>
+        </div>
+        <div class="headerStripHome1">
+            <ion-icon ios="ios-search" md="md-search" class="tabsIcon" (click)="findHotel()"></ion-icon>
+            <ion-icon ios="ios-apps" md="md-apps" class="tabsIcon"></ion-icon>
+            <ion-icon ios="ios-person" md="md-person" class="tabsIcon"></ion-icon>
+        </div>
 </ion-content>
